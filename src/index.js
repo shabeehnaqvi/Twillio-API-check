@@ -12,10 +12,10 @@ app.use(express.json());
 // app.use(authHandler);
 const cors = require("cors");
 app.use(cors());
-mongoose
-  .connect("mongodb://localhost:27017/database1")
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((error) => console.log(`Couldn't connected to MongoDB, ${error}`));
+// mongoose
+//   .connect("mongodb://localhost:27017/database1")
+//   .then(() => console.log("Connected to MongoDB"))
+//   .catch((error) => console.log(`Couldn't connected to MongoDB, ${error}`));
 
 app.use("/student", router);
 app.use("/teacher", routerTeacher);
